@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="avm"
+            type="com.irontec.axier.mvvmexample.viewmodel.ArticleViewModel"/>
+    </data>
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Nuevo evento de desarrollo"
+            android:layout_marginBottom="2dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@{avm.getTitle()}"/>
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Los lugareños han creado un nuevo evento de desarrollo web cerca de su zona."
+            android:layout_marginBottom="5dp"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:textColor="@android:color/darker_gray"
+            android:text="@{avm.getSubtitle()}"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:text="@{avm.getFormattedDate()}"/>
+
+        <TextView
+            android:id="@+id/excerpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="La cita de referencia en España para los profesionales del marketing online vuelve al World Trade Center. Zaragoza acoge cada año a cientos de profesionales para aprender sobre SEO, Social Media, Analítica y Optimización, Desarrollo, actualizarse con los últimos cambios en Internet y realizar mucho… mucho networking."
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:text="@{avm.getExcerpt()}"/>
+
+    </LinearLayout>
+</layout>
