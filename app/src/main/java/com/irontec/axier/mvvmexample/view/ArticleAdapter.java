@@ -1,4 +1,4 @@
-package com.irontec.axier.mvvmexample.adapters;
+package com.irontec.axier.mvvmexample.view;
 
 import android.databinding.DataBindingUtil;
 import android.support.v7.widget.RecyclerView;
@@ -23,6 +23,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.BindingH
     public ArticleAdapter(List<Article> mArticles) {
         this.mArticles = mArticles;
     }
+
 
     @Override
     public BindingHolder onCreateViewHolder(ViewGroup parent, int viewType) {
