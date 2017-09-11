@@ -1,6 +1,7 @@
 # android-mvvm-example
 
-![MVVM](https://raw.githubusercontent.com/irontec/android-mvvm-example/master/logo.png)
+<img src="https://raw.githubusercontent.com/irontec/android-mvvm-example/master/logo.png" width="200">
+
 Basic app for showcasing the use of the [MVVM](https://en.wikipedia.org/wiki/Model–view–viewmodel) (Model - View - ViewModel) Pattern on Android using the [Data Binding](https://github.com/ReactiveX/RxAndroid) library.
 This app is only for educational purposes.
 
